@@ -1,6 +1,6 @@
 # Atlys QA Assignment
 
-Test plan document is attached in .xlsx sheet, donwload it separately to view content
+Test plan document is attached in .xlsx sheet, donwload it separately to view content.
 
 ## Setup
 
@@ -17,11 +17,26 @@ Test plan document is attached in .xlsx sheet, donwload it separately to view co
 
 ---
 
-✅ This covers:
+Deliverables Covered
 
-- **Test plan** with 7 scenarios
-- **UI automation** for 3 scenarios
-- **API testing** for 3 scenarios
-- **Documentation & structure** for submission
+✅ Test plan with 7 scenarios
+✅ UI automation for 3 scenarios
+✅ API testing for 3 scenarios
+✅ Documentation & project structure
 
 ---
+
+.Repository Structure
+├── tests/
+│ ├── searchApi.test.js # API tests
+│ ├── testSearch.spec.js # UI tests
+├── package.json
+├── playwright.config.js
+└── README.md
+
+NOTE
+
+Ensure Node.js and npm are installed before running the tests.
+For UI tests, Playwright will automatically download required browser binaries on first install.
+API tests use fetch or axios for HTTP requests.
+The HTML report from Playwright provides detailed results and screenshots for failed tests.
