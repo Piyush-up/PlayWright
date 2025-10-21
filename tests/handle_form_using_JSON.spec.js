@@ -2,6 +2,7 @@ import test, { expect } from "@playwright/test";
 import userData from "../testData.json";
 
 const [user] = userData;
+let prefix = Math.random().toString(36).substring(2, 10);
 
 test.describe("Data Driven Tetsing", () => {
   for (let user of userData) {
@@ -9,9 +10,9 @@ test.describe("Data Driven Tetsing", () => {
       await page.goto("https://freelance-learn-automation.vercel.app/signup");
 
       // fill form using data
-      await page.getByPlaceholder("Name").fill(user.name);
+      await page.getByPlaceholder("Name").fill(prefix + user.name);
       await page.waitForTimeout(1000);
-      await page.getByPlaceholder("Email").fill(user.email);
+      await page.getByPlaceholder("Email").fill(prefix + user.email);
       await page.waitForTimeout(1000);
 
       await page.getByPlaceholder("Password").fill(user.password);
