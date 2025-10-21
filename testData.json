@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "email": "admin1sdf@email.com",
+    "password": "admin@123",
+    "name": "One",
+    "interests": ["JavaScript", "SQL", "Cypress", "Selenium"],
+    "gender": "Female",
+    "state": "Bihar",
+    "Hobbies": ["Playing", "Singing"]
+  },
+  {
+    "id": 2,
+    "email": "admin2sdf@email.com",
+    "password": "admin@123",
+    "name": "Two",
+    "interests": ["JavaScript", "SQL"],
+    "gender": "Female",
+    "state": "Himachal Pradesh",
+    "Hobbies": ["Playing", "Singing"]
+  },
+  {
+    "id": 3,
+    "email": "admin3sdf@email.com",
+    "password": "admin@123",
+    "name": "Three",
+    "interests": ["JavaScript", "Selenium"],
+    "gender": "Female",
+    "state": "Kerala",
+    "Hobbies": ["Playing", "Singing"]
+  }
+]
